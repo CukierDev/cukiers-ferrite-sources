@@ -19,14 +19,13 @@ sources:
     htmlParser:
       searchUrl: /search/{query}/1/
       rows: ".table-list tbody tr"
-      magnetLink:
+      magnet:
         externalLinkQuery: ".name a:nth-last-child(1)"
         ComplexQuery: "div.clearfix > ul:nth-child(1) > li:nth-child(1) > a"
       title:
         ComplexQuery: ".name > a:nth-last-child(1)"
       size:
         ComplexQuery: ".size"
-        regex: "(.*?B)"
       sl:
         seeders: ".seeds"
         leechers: ".leeches"
