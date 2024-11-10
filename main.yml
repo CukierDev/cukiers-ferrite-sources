@@ -22,11 +22,12 @@ sources:
       magnet:
         externalLinkQuery: ".name a:nth-last-child(1)"
         query: "div.clearfix > ul:nth-child(1) > li:nth-child(1) > a"
-        attribute: "value"
+        attribute: "href"
       title:
         query: ".name > a:nth-last-child(1)"
       size:
         query: ".size"
+        regex: "(.*?B)"
       sl:
         seeders: ".seeds"
         leechers: ".leeches"
