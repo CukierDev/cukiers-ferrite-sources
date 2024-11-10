@@ -25,7 +25,7 @@ sources:
       title:
         query: ".name > a:nth-last-child(1)"
       size:
-        ComplexQuery: ".size"
+        query: ".size"
       sl:
         seeders: ".seeds"
         leechers: ".leeches"
