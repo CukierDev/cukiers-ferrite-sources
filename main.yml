@@ -21,11 +21,11 @@ sources:
       rows: ".table-list tbody tr"
       magnetLink:
         externalLinkQuery: ".name a:nth-last-child(1)"
-        query: "div.clearfix > ul:nth-child(1) > li:nth-child(1) > a"
+        ComplexQuery: "div.clearfix > ul:nth-child(1) > li:nth-child(1) > a"
       title:
-        query: ".name > a:nth-last-child(1)"
+        ComplexQuery: ".name > a:nth-last-child(1)"
       size:
-        query: ".size"
+        ComplexQuery: ".size"
         regex: "(.*?B)"
       sl:
         seeders: ".seeds"
