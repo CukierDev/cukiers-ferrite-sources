@@ -1,0 +1,32 @@
+name: "Cukier's Ferrite Sources"
+author: Cukier
+sources:
+  - name: 1337x
+    version: 1
+    minVersion: '0.7'
+    about: >-
+      1337x Torrent source
+    website: https://1337x.to
+    tags:
+      - name: Torrent
+        color: '#FF5733'
+      - name: Movie
+        color: '#3498db'
+      - name: Series
+        color: '#9b59b6'
+    api:
+      apiUrl: https://1337x.to
+    htmlParser:
+      searchUrl: /search/{query}/1/
+      rows: ".table-list tbody tr"
+      magnetLink:
+        externalLinkQuery: ".name a:nth-last-child(1)"
+        query: "div.clearfix > ul:nth-child(1) > li:nth-child(1) > a"
+      title:
+        query: ".name > a:nth-last-child(1)"
+      size:
+        query: ".size"
+        regex: "(.*?B)"
+      sl:
+        seeders: ".seeds"
+        leechers: ".leeches"
