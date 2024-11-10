@@ -19,6 +19,7 @@ sources:
       - udp://tracker.opentrackr.org:1337/announce
     api:
       apiUrl: https://torrentio.strem.fun
+      clientSecret: ''
     jsonParser:
       searchUrl: /{type}/{id}.json
       results: streams
