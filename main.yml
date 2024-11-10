@@ -23,7 +23,7 @@ sources:
         externalLinkQuery: ".name a:nth-last-child(1)"
         ComplexQuery: "div.clearfix > ul:nth-child(1) > li:nth-child(1) > a"
       title:
-        ComplexQuery: ".name > a:nth-last-child(1)"
+        query: ".name > a:nth-last-child(1)"
       size:
         ComplexQuery: ".size"
       sl:
