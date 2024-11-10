@@ -17,7 +17,7 @@ sources:
     api:
       apiUrl: https://1337x.to
     htmlParser:
-      searchUrl: /search/{query}/1/
+      searchUrl: /category-search/{query}/Movies/1/
       rows: ".table-list tbody tr"
       magnet:
         externalLinkQuery: ".name a:nth-last-child(1)"
