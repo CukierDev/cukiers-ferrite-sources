@@ -35,8 +35,8 @@ sources:
     version: 1
     minVersion: '0.7'
     about: >-
-      Orionoid source, requiers an api key.
-    website: https://1337x.to
+      Orionoid source, requiers an api key. ONLY WORKS WHEN SEARCHING FOR AN IMBD ID!!!
+    website: https://orionoid.com
     tags:
       - name: Torrent
         color: '#FF5733'
@@ -49,5 +49,15 @@ sources:
       clientSecret:
         dynamic: true
     jsonParser:
-      searchUrl: /?keyapp=S3LH9LUJCDHPSA9BJHCMYDQFHJEAPCJD&keyuser={secret}&mode=stream&action=retrieve&type=movie&limitcount=5&debridlookup=user&query={query}
+      searchUrl: /?keyapp=S3LH9LUJCDHPSA9BJHCMYDQFHJEAPCJD&keyuser={secret}&mode=stream&action=retrieve&type=movie&limitcount=5&debridlookup=user&idimdb={query}
       results: data.streams
+      magnetHash:
+        query: file.hash
+      magnetLink:
+        query: links
+      title:
+        query: file.name
+      size:
+        query: file.size
+      sl:
+        seeds: stream.seeds
