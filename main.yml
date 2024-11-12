@@ -31,3 +31,23 @@ sources:
       sl:
         seeders: ".seeds"
         leechers: ".leeches"
+  - name: Orionoid
+    version: 1
+    minVersion: '0.7'
+    about: >-
+      Orionoid source, requiers an api key.
+    website: https://1337x.to
+    tags:
+      - name: Torrent
+        color: '#FF5733'
+      - name: Movie
+        color: '#3498db'
+      - name: Series
+        color: '#9b59b6'
+    api:
+      apiUrl: https://api.orionoid.com
+      clientSecret:
+        dynamic: true
+    jsonParser:
+      searchUrl: /?keyapp=S3LH9LUJCDHPSA9BJHCMYDQFHJEAPCJD&keyuser={secret}&mode=stream&action=retrieve&type=movie&limitcount=5&debridlookup=user&query={query}
+      results: data.streams
